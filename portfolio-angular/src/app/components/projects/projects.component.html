@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <img [src]="project.image" [alt]="project.title" class="project-image">
+        <h3>{{ project.title }}</h3>
+        <p>Langage : {{ project.language }}</p>
+        <p>Mise à jour : {{ project.lastUpdate }}</p>
+        <a [href]="project.githubLink" target="_blank" class="github-button">
+            Voir sur GitHub
+      </a>
+      </div>
+    </div>
+  </div>
+  

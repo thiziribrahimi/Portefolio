@@ -1,0 +1,137 @@
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #d4edda;
+    color: #155724; 
+    padding: 20px;
+    flex-direction: row;
+  }
+  
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #155724; 
+    margin-bottom: 15px;
+    max-width: 550px;
+  }
+
+  .hero-content p:nth-child(2) {
+    font-weight: 500;
+    color: #28a745; 
+  }
+  
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 span {
+    color: #28a745; 
+  }
+  
+ 
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+
+  .btn-custom {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+  }
+  
+ 
+  .hero-image {
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #28a745;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  .profile-pic:hover {
+    transform: scale(1.05) rotate(3deg);
+  }  
+  
+ 
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .delay {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
+    .hero-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    .animated-text {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #155724;
+        min-height: 30px;
+        border-right: 2px solid #28a745;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        padding-right: 5px;
+      }
+
+      .name-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #155724;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Légère ombre */
+      }
+  }
+  

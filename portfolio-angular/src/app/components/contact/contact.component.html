@@ -1,0 +1,23 @@
+<div class="contact-container">
+    <h2>Contactez-moi</h2>
+    
+    <form (submit)="sendMessage()">
+      <label for="name">Nom</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required>
+  
+      <label for="message">Message</label>
+      <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+  
+      <button type="submit">Envoyer</button>
+    </form>
+  
+    <div class="contact-info">
+      <p><strong>Email :</strong> <a href="mailto:thiziribrahimi&#64;outlook.fr">thiziribrahimi&#64;outlook.fr</a></p>
+      <p><strong>Téléphone :</strong> <a href="tel:+33780749048">+33 780 749 048</a></p>
+      <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/thiziri-brahimi-bba910298/" target="_blank">Thiziri Brahimi</a></p>
+    </div>
+  </div>
+  

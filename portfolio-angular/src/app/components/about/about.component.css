@@ -1,0 +1,85 @@
+
+.about-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 20px;
+  }
+  
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 50px;
+  }
+  
+ 
+  .about-text {
+    text-align: left;
+    max-width: 50%;
+  }
+  
+  .about-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Remonte les éléments */
+    margin-top: -40px; /* Ajuste la hauteur */
+  }
+  
+  
+  .ece-logo {
+    width: 120px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -50px; /* Remonte encore plus */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ece-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  
+
+  .tech-stack {
+    text-align: center;
+  }
+  
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tech-logo {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tech-logo:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .highlight-box {
+    background: #e6f7e6;
+    border-left: 5px solid #2a7a2a;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  

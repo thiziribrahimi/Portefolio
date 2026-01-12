@@ -13,8 +13,6 @@ Découvrez l'interface de mon portfolio interactif :
 
 <img width="1850" height="934" alt="image" src="https://github.com/user-attachments/assets/a4ad4f78-80c9-4935-b260-038741d70285" />
 
-### 📱 Responsive Design (Mobile)
-<div style="display: flex; gap: 10px;">
-  <img src="public/mobile-home.png" alt="Vue Mobile Accueil" width="200" />
-  <img src="public/mobile-about.png" alt="Vue Mobile À Propos" width="200" />
-</div>
+### 📱Contactez-moi
+<img width="1905" height="848" alt="image" src="https://github.com/user-attachments/assets/7f7b0805-bce0-4a56-938d-6c26363989b1" />
+

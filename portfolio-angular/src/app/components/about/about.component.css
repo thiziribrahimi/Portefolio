@@ -1,85 +1,257 @@
-
+/* Conteneur principal */
 .about-container {
-    text-align: center;
-    padding: 40px;
-  }
-  
-  
-  .about-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #155724;
-    margin-bottom: 20px;
-  }
-  
+    padding: 4rem 2rem;
+    color: #333333; /* Texte gris foncé (lisible sur fond blanc) */
+    background-color: #ffffff; /* Fond BLANC simple */
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
 
-  .about-content {
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #222; /* Titre presque noir */
+}
+
+.about-title span {
+    color: #e50914; /* On garde juste la touche de rouge */
+}
+
+/* Mise en page */
+.about-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    gap: 50px;
-  }
-  
- 
-  .about-text {
-    text-align: left;
-    max-width: 50%;
-  }
-  
-  .about-logos {
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+/* Colonne de gauche */
+.about-text {
+    flex: 2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444; /* Gris standard pour la lecture */
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+/* --- SECTION EXPÉRIENCE (STYLE CLAIR) --- */
+.experience-section {
+    margin-top: 3rem;
+    /* Fond gris très pâle pour détacher légèrement du blanc */
+    background-color: #f8f9fa; 
+    padding: 30px;
+    border-radius: 8px;
+    /* Bordure fine et discrète */
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #e50914; /* Accent rouge à gauche */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Ombre très légère */
+}
+
+.experience-section h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.job-card h4 {
+    font-size: 1.3rem;
+    color: #222; /* Titre du poste en sombre */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.company {
+    color: #e50914;
+    font-weight: bold;
+}
+
+.job-date {
+    font-size: 0.95rem;
+    color: #666; /* Gris moyen pour la date */
+    margin-bottom: 1.2rem;
+    font-style: italic;
+    background-color: #eee; /* Petit fond gris sous la date */
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Liste des tâches */
+.job-desc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job-desc li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.8rem;
+    color: #444; /* Texte descriptif gris foncé */
+}
+
+.job-desc li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e50914; /* Puce rouge */
+    font-size: 1.5rem;
+    line-height: 1rem;
+    top: 2px;
+}
+/* --- FIN SECTION EXPÉRIENCE --- */
+
+
+/* Boîte de recherche d'alternance */
+.highlight-box {
+    margin-top: 3rem;
+    /* Fond blanc avec bordure rouge */
+    background-color: #ffffff; 
+    border: 2px solid #e50914;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    /* Ombre légère pour le relief */
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.1);
+}
+
+.highlight-box h3 {
+    color: #e50914;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.highlight-box p {
+    color: #333; /* Texte noir */
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Colonne de droite : Logos */
+.about-logos {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Remonte les éléments */
-    margin-top: -40px; /* Ajuste la hauteur */
-  }
-  
-  
-  .ece-logo {
-    width: 120px;
-    margin-bottom: 20px;
-    position: relative;
-    top: -50px; /* Remonte encore plus */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .ece-logo:hover {
-    transform: scale(1.1);
-  }
-  
-  
+    gap: 2rem;
+}
 
-  .tech-stack {
+.ece-logo {
+    max-width: 200px; /* On l'agrandit légèrement */
+    /* On ajoute un fond gris clair pour qu'il ressorte du fond blanc de la page */
+    background-color: #f8f9fa; 
+    border: 1px solid #e0e0e0; /* Une fine bordure grise */
+    border-radius: 12px; /* Coins arrondis */
+    padding: 20px; /* Espace autour du logo */
+    /* Une ombre très légère pour le décoller du fond */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+.tech-stack {
     text-align: center;
-  }
-  
-
-  .logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .tech-logo {
-    width: 50px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .tech-logo:hover {
-    transform: scale(1.1);
-  }
-  
-
-  .highlight-box {
-    background: #e6f7e6;
-    border-left: 5px solid #2a7a2a;
-    padding: 15px;
-    margin-top: 20px;
+    /* Fond gris pâle comme l'expérience */
+    background-color: #f8f9fa;
+    padding: 2rem;
     border-radius: 8px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+.tech-stack h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: #333;
     font-weight: bold;
-  }
-  
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tech-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    /* Optionnel : filtre gris pour uniformiser, s'enlève au survol */
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* --- NOUVEAU : STYLE POUR LE LOGO ENTREPRISE --- */
+
+.job-header {
+    display: flex;
+    align-items: center; /* Centre verticalement le logo et le texte */
+    gap: 15px; /* Espace entre le logo et le texte */
+    margin-bottom: 15px;
+}
+
+.company-logo {
+    width: 60px; /* Taille du logo */
+    height: 60px;
+    object-fit: contain; /* L'image ne sera pas déformée */
+    
+    /* Style "Badge" propre (comme pour l'école) */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.job-title-group h4 {
+    margin-bottom: 5px; /* Réduit l'espace sous le titre */
+}
+
+.job-title-group .job-date {
+    margin-bottom: 0; /* Enlève la marge du bas pour la date */
+}
+
+/* Responsive Mobile : on empile si l'écran est petit */
+@media (max-width: 600px) {
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .company-logo {
+        margin-bottom: 10px;
+    }
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-logos {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

@@ -1,15 +1,27 @@
 <div class="container">
-    <h2>Mes Projets</h2>
-    <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of projects">
-        <img [src]="project.image" [alt]="project.title" class="project-image">
-        <h3>{{ project.title }}</h3>
-        <p>Langage : {{ project.language }}</p>
-        <p>Mise à jour : {{ project.lastUpdate }}</p>
-        <a [href]="project.githubLink" target="_blank" class="github-button">
-            Voir sur GitHub
+  <h2>Mes Projets</h2>
+  
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      
+      <!-- L'image de ton projet -->
+      <img [src]="project.image" [alt]="project.title" class="project-image">
+      
+      <h3>{{ project.title }}</h3>
+      <p>Langage : {{ project.language }}</p>
+      
+      <!-- NOUVEAU : La description s'affiche uniquement si elle existe dans le TS -->
+      <p *ngIf="project.description" class="project-description" style="font-size: 0.9em; margin-bottom: 10px;">
+        {{ project.description }}
+      </p>
+
+      <p>Mise à jour : {{ project.lastUpdate }}</p>
+      
+      <!-- MODIFIÉ : Le bouton s'affiche uniquement s'il y a un lien GitHub -->
+      <a *ngIf="project.githubLink" [href]="project.githubLink" target="_blank" class="github-button">
+        Voir sur GitHub
       </a>
-      </div>
+      
     </div>
   </div>
-  
+</div>

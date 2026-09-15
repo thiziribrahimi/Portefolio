@@ -1,57 +1,98 @@
 <div class="about-container">
-    <h1 class="about-title">À PROPOS DE <span>MOI</span></h1>
+  <!-- Titre principal -->
+  <h2 class="about-title">À <span>Propos</span></h2>
+  
+  <div class="about-content">
+    
+    <!-- COLONNE DE GAUCHE : Texte & Expérience -->
+    <div class="about-text">
+      <p>
+        Passionnée par la conception logicielle et l'architecture distribuée, je me spécialise dans le développement <strong>Fullstack</strong>. Mon objectif est de concevoir des systèmes fiables, sécurisés et maintenables en appliquant les bonnes pratiques (Clean Code, Architecture Hexagonale).
+      </p>
 
-    <div class="about-content">
-        <div class="about-text">
-            <p>
-                Je suis une <strong>développeuse Full-stack</strong> passionnée par l'écosystème <strong>Java/Spring Boot</strong> et les frameworks modernes comme <strong>Angular et React</strong>.  
-                Actuellement étudiante en <strong>Master 1 GIL</strong> à l'Université de Rouen Normandie, j'aime concevoir des applications web performantes et scalables.
-            </p>
+      <!-- La fameuse boîte de recherche de stage -->
+      <div class="highlight-box">
+        <h3>🚀 Recherche Stage de Fin d'Études</h3>
+        <p>Actuellement en Master 2 Ingénierie Logicielle, je recherche un stage de pré-embauche de 6 mois (à partir du début de l'année) en tant que Développeuse Fullstack (Java / Angular).</p>
+      </div>
 
-            <div class="experience-section">
-                <h3>💼 Expérience Professionnelle</h3>
-                <div class="job-card">
-                    <div class="job-header">
-                        <img src="eddmon.png" alt="Logo Eddmon" class="company-logo">
-                        
-                        <div class="job-title-group">
-                            <h4>Développeuse Full-stack (Stage) &#64; <span class="company">Eddmon</span></h4>
-                            <p class="job-date">Avril 2025 - Août 2025 | Paris</p>
-                        </div>
-                    </div>
-
-                    <p class="job-desc">
-                        Conception et développement de plusieurs plateformes web et API :
-                    </p>
-                    <ul>
-                        <li><strong>Front-end :</strong> Développement d'interfaces réactives (Dashboard administrateur, Espace écoles) avec <strong>React & TypeScript</strong>.</li>
-                        <li><strong>Back-end :</strong> Création d'une API SMS complète avec <strong>Node.js & Express</strong>.</li>
-                        <li><strong>DevOps & Data :</strong> Conteneurisation avec <strong>Docker</strong>, déploiement sur DigitalOcean et gestion de base de données <strong>MySQL</strong>.</li>
-                    </ul>
-                </div>
+     <!-- Section Expérience / Formation -->
+      <div class="experience-section">
+        <h3>Expériences Clés</h3>
+        
+        <!-- 1. Expérience Architecture / Perso (La plus récente, on met en avant tes compétences actuelles) -->
+        <div class="job-card" style="margin-bottom: 2.5rem;">
+          <div class="job-header">
+            <!-- J'ai mis un logo générique pour le projet, tu peux l'enlever si tu préfères -->
+            <img src="java-logo.png" alt="Java Backend" class="company-logo" style="padding: 12px;">
+            <div class="job-title-group">
+              <h4>Architecte Logicielle & Dev Backend <span class="company">&#64;Projets Avancés</span></h4>
+              <span class="job-date">2026</span>
             </div>
-
-            <div class="highlight-box">
-                <h3>🚀 Recherche d'Alternance</h3>
-                <p>
-                    Je recherche une alternance à partir de <strong>septembre 2026</strong> 
-                    pour mettre mes compétences en développement Full-stack au service de projets ambitieux.
-                </p>
-            </div>
+          </div>
+          <div class="job-desc">
+            <ul>
+              <li>Conception et développement d'APIs RESTful avec <strong>Java 25 et Spring Boot 3</strong>.</li>
+              <li>Mise en place d'une <strong>Architecture Hexagonale</strong> et développement API-First (OpenAPI).</li>
+              <li>Déploiement d'une architecture distribuée de 5 microservices communiquant via <strong>Apache Kafka</strong>.</li>
+              <li>Sécurisation des flux avec <strong>Keycloak (OAuth2)</strong> et API Gateway GraphQL.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="about-logos">
-            <img src="ece-logo.jpg" alt="Logo ECE Paris" class="ece-logo">
-            
-            <div class="tech-stack">
-                <h3>Stack technologique</h3>
-                <div class="logos">
-                    <img src="java-logo.png" alt="Java" class="tech-logo">
-                    <img src="springboot-logo.png" alt="Spring Boot" class="tech-logo">
-                    <img src="TypeScript.png" alt="TypeScript" class="tech-logo">
-                    <img src="angular-logo.png" alt="Angular" class="tech-logo">
-                </div>
+        <!-- 2. Expérience M1 : MedExpire (CHU de Rouen) -->
+        <div class="job-card" style="margin-bottom: 2.5rem;">
+          <div class="job-header">
+            <div class="job-title-group">
+              <h4>Développeuse Fullstack (Projet M1) <span class="company">&#64;CHU de Rouen</span></h4>
+              <span class="job-date">2025 - 2026</span>
             </div>
+          </div>
+          <div class="job-desc">
+            <ul>
+              <li>Développement de <strong>MedExpire</strong>, plateforme collaborative de redistribution de médicaments invendus.</li>
+              <li>Création d'un Frontend réactif en <strong>Vue.js 3</strong> et d'un Backend sécurisé <strong>Node.js / Express</strong>.</li>
+              <li>Mise en place d'une culture DevOps : environnement <strong>Docker, GitLab CI/CD</strong> et tests automatisés.</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- 3. Stage Pro : Eddmon -->
+        <div class="job-card">
+          <div class="job-header">
+            <img src="eddmon.png" alt="Logo Eddmon" class="company-logo">
+            <div class="job-title-group">
+              <h4>Développeuse Frontend (Stage) <span class="company">&#64;Eddmon</span></h4>
+              <span class="job-date">2024 (4 mois)</span>
+            </div>
+          </div>
+          <div class="job-desc">
+            <ul>
+              <li>Développement d'interfaces utilisateurs dynamiques et performantes avec <strong>React.js</strong>.</li>
+              <li>Intégration de maquettes UI/UX et optimisation de l'expérience utilisateur.</li>
+              <li>Collaboration en équipe avec les méthodes agiles.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      </div>
+   <!-- COLONNE DE DROITE : Logos (École & Stack) -->
+    <div class="about-logos">
+      <!-- Logo de ton école (Attention, c'est un .jpg !) -->
+      <img src="ece-logo.jpg" alt="Logo ECE" class="ece-logo">
+      
+      <!-- Boîte Stack Technique -->
+      <div class="tech-stack">
+        <h3>Ma Stack Privilégiée</h3>
+        <div class="logos">
+          <!-- Les bons noms de fichiers tels qu'ils sont dans ton dossier public -->
+          <img src="java-logo.png" alt="Java" class="tech-logo" title="Java">
+          <img src="springboot-logo.png" alt="Spring Boot" class="tech-logo" title="Spring Boot">
+          <img src="angular-logo.png" alt="Angular" class="tech-logo" title="Angular">
+          <img src="TypeScript.png" alt="TypeScript" class="tech-logo" title="TypeScript">
+        </div>
+      </div>
     </div>
+  </div>
 </div>
